@@ -1,0 +1,338 @@
+        .wrapper,
+        .content,
+        .full_width,
+        .overlapping_content .content > .container,
+		.more_facts_holder,
+		.comment_holder .comment #respond textarea,
+		.comment_holder .comment #respond input[type='text'],
+		.content .container
+		{
+        	background-color:#ffffff;
+        }
+		.angled-section polygon{
+			fill: #ffffff;
+		}
+    
+.header_bottom,
+.header_top,
+.fixed_top_header .bottom_header{
+	background-color: rgba(255,255,255,1) ;
+}
+
+header.fixed.scrolled .header_bottom,
+header.fixed.scrolled .header_top,
+header.fixed_hiding.scrolled .header_bottom,
+header.fixed_hiding.scrolled .header_top {
+	background-color: rgba(255,255,255,1) !important;
+}
+
+.header_top,
+.fixed_top_header .top_header,
+.fixed_top_header nav.mobile_menu{
+	background-color: rgba(255,255,255,1);
+}
+header.sticky .header_top{
+	background-color: rgba(0,0,0,1);
+}
+
+.content{
+	margin-top: 0;
+}
+
+        header.fixed_hiding .q_logo a,
+        header.fixed_hiding .q_logo{
+            max-height: 111px;
+        }
+
+nav.main_menu ul li:hover a {
+	 color: #ffffff; }
+
+
+	nav.main_menu > ul > li:hover > a,
+	header.sticky nav.main_menu > ul > li:hover > a {
+					background-color:white;
+			}
+
+			nav.main_menu > ul > li:hover > a,
+		header.sticky nav.main_menu > ul > li:hover > a,
+		.dark nav.main_menu > ul > li:hover > a,
+		.light header.sticky nav.main_menu > ul > li:hover > a {
+			color: grey !important;
+			height:75px !important;
+			
+		}
+		
+header.scrolled nav.main_menu > ul > li > a:hover > span,
+header.scrolled nav.main_menu > ul > li:hover > a > span,
+header.scrolled nav.main_menu > ul > li.active > a > span,
+header.scrolled nav.main_menu > ul > li > a:hover > i,
+header.scrolled nav.main_menu > ul > li:hover > a > i,
+header.scrolled nav.main_menu > ul > li.active > a > i,
+header.scrolled .side_menu_button a:hover,
+.light.scrolled nav.main_menu > ul > li > a:hover,
+.light.scrolled nav.main_menu > ul > li.active > a,
+.light.scrolled .side_menu_button a:hover,
+.dark.scrolled nav.main_menu > ul > li > a:hover,
+.dark.scrolled nav.main_menu > ul > li.active > a,
+.dark.scrolled .side_menu_button a:hover {
+	color: #000000 !important;
+}
+
+
+
+
+
+
+
+	#respond textarea,
+	#respond input[type='text'],
+	.contact_form input[type='text'],
+	.contact_form  textarea,
+	.comment_holder #respond textarea,
+	.comment_holder #respond input[type='text'],
+	input.wpcf7-form-control.wpcf7-text,
+	input.wpcf7-form-control.wpcf7-number,
+	input.wpcf7-form-control.wpcf7-date,
+	textarea.wpcf7-form-control.wpcf7-textarea,
+	select.wpcf7-form-control.wpcf7-select,
+	input.wpcf7-form-control.wpcf7-quiz,
+	.post-password-form input[type='password']
+	{
+	background-color: #f6f6f6; 			}
+
+
+
+
+h2,
+h2 a{
+			font-size: 25px; 			    	}
+h4,
+h4 a{
+	color: #818181; 					    	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.footer_top_holder,	footer #lang_sel > ul > li > a,	footer #lang_sel_click > ul > li > a{
+		background-color: #303030;
+	}
+	footer #lang_sel ul ul a,footer #lang_sel_click ul ul a,footer #lang_sel ul ul a:visited,footer #lang_sel_click ul ul a:visited{
+		background-color: #303030 !important;
+	}
+
+
+
+
+
+
+	.footer_bottom_holder{
+	padding-bottom: 25px	}
+	.footer_bottom{
+		padding-top: 25px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .vertical_menu_float .menu-item .second{
+	left: calc(100% + 30px); /*because of the padding*/
+}
+
+.vertical_menu_hidden aside.vertical_menu_area .vertical_menu_float .menu-item .second {
+	left: calc(100% + 40px);
+}
+
+ 
+ 
+ 
+
+
+
+
+	.vertical_menu_area{
+		text-align:left;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text,
+	.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number,
+	.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date,
+	.cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea,
+	.cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select,
+	.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz{
+		background-color: #ffffff;	}
+
+
+
+
+
+
+
+
+
+
+												
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

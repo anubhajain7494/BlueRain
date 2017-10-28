@@ -1,0 +1,869 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>BLUE RAIN</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="start_css.css" rel="stylesheet" type="text/css" />
+	  <link href="abc.css" rel="stylesheet" type="text/css" />
+	  <link href="xyz.css" rel="stylesheet" type="text/css" />
+	  <link href="123.css" rel="stylesheet" type="text/css" />
+	  <link href="composer.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="css/animations.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	  <script type="text/javascript" src="jquery.js"></script> 
+      <script type="text/javascript" src="js/scrollview.js"></script>
+      <link rel="stylesheet" type="text/css" media="all" href="style_scroll.css">	  
+	  <script type="text/javascript" src="smoothscroll.js"></script>
+	  <script>            
+	jQuery(document).ready(function() {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.crunchify-top').fadeIn(duration);
+			} else {
+				jQuery('.crunchify-top').fadeOut(duration);
+			}
+		});
+ 
+		jQuery('.crunchify-top').click(function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+	});
+</script>
+      <style>
+	  
+	  
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+	  .mask-loading {
+  widows: 100%;
+  background-color: rgba(0, 0, 0, .75);
+}
+.spinner {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  margin: 0 auto;
+  top:22%
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+#showcase { padding: 60px 0; }
+.gallery { width: 960px; margin: 0 auto; text-align: center; }
+
+    .animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in; 
+} 
+
+.clearfix { zoom:1}
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+
+
+ animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in; 
+} 
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInDown { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+	table td {  padding:0px !important;}
+  
+  .current {
+    color: white !important;
+}
+
+  #contenttt {
+           display:none;
+  }
+  
+   .pin-frame { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+   
+   .on {
+
+ border-bottom: 3px solid #ff9900;
+
+}
+.ong {
+
+ border-bottom:1px solid red !important;
+
+}
+
+.joy {  height:100% !important}
+
+#object{
+	visibility: hidden;
+}
+
+ </style>
+ 
+ <script>
+ 
+   $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 120) {
+            $(".anubha").addClass("active123");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".anubha").removeClass("active123");
+        }
+    });
+});
+
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".anubha2").addClass("active123456");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".anubha2").removeClass("active123456");
+        }
+    });
+});
+     
+	  window.addEventListener("load", function(){
+	  var load = document.getElementById("load_screen");
+	  document.body.removeChild(load_screen);
+	  document.getElementById("contenttt").style.display = "block";
+      });
+	  
+        function preloader(){
+            document.getElementById("mask-loading").style.display = "none";
+            document.getElementById("contenttt").style.display = "block";
+        }
+        window.onload = preloader;
+       
+	   var o = $(window);
+$(".mask-loading").css("height", o.height());
+$(".spinner").css("top", (o.height() / 2) - 25);
+
+$(document).ready(function() {
+  $("#largeview ul li a").click(function() {
+    $("#largeview ul li a").removeClass("on");
+    $(this).addClass("on"); 
+  });
+});
+
+$(function () {
+    $(window).scroll(function () {
+        var top_offset = $(window).scrollTop();
+        if (top_offset == 0) {
+           $("#largeview ul li a").removeClass("on");
+        }
+		if (window.top != window.self) {
+		  $("#largeview ul li a").removeClass("on");
+		}
+    })
+});
+
+ </script>
+  
+ </head>
+
+ <body style="width:100%">
+   
+   <div class="mask-loading" id="load_screen">
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+
+    <div id="contenttt">	
+   
+   <table>
+   <tr>
+   <td>
+   
+<div class="wrapper">
+	<div class="wrapper_inner">	     
+	     <header class="scroll_header_top_area dark fixed transparent scrolled_not_transparent with_hover_bg_color page_header">
+    <div class="header_inner clearfix">
+
+		<div class=" anubha header_top_bottom_holder">
+	     <div class="header_bottom clearfix" style=" background-color:rgba(255, 255, 255, 0);">
+    <div class="container">
+        <div class="container_inner clearfix">
+            <div class="header_inner_left anubha2" style="top:15%">
+                
+                <div class="logo_wrapper" style="height: 85px;">
+                    <div class="q_logo" style="margin-top:-20%">
+                        <a href="index.html" style="height: 90px; visibility: visible;">
+						  <p id="reyyy" style="font-family:'forte'; color:#00a2e8; font-size:45px">BlueRain</p>   
+                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+							   <div class="show-menu" style="display:none; float:right; margin-top:2%;margin-bottom:5%; position:fixed; margin-left:60%; width:50%">
+								<a href="javascript:seemenu('largeview', 'mymobile')" style="color:white; font-size:25px">
+                                <img src="menu.png"  style="height:50px ; width:150px"/>
+								</a>
+								</div>
+								
+								<div id="mymobile" style="display:none; position:fixed; margin-top:18%; position:fixed; height:35%; width:100%; border:1px solid white;
+								 -webkit-transition-duration: 3.7s;
+    -moz-transition-duration: 3.7s;
+    -o-transition-duration: 3.7s;
+    transition-duration: 3.7s
+	">
+	
+<div class="table">
+    <a class="table-row" href="hiring.html">
+        <div class="table-cell">We are hiring</div>
+    </a>
+	<a class="table-row smoothScroll" href="#story">
+        <div class="table-cell">Our Story</div>
+    </a>
+	<a class="table-row smoothScroll" href="#team">
+        <div class="table-cell">Team</div>
+    </a>
+	<a class="table-row smoothScroll" href="#contact">
+        <div class="table-cell">Contact Us</div>
+    </a>
+	
+</div>
+	</div>			
+								
+                                <nav class="main_menu drop_down right" id="largeview" style="margin-right:4%; height:80px; margin-top:-1.4%">
+                                    <ul id="menu-one_page_menu" style="height:90% !important;">
+                                        <li id="nav-menu-item-15470" class="joy menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14833 current_page_item active narrow">
+                                            <a href="hiring.html" class=" current  " style="line-height: 100px;">
+                                               
+                                                <span>WE ARE HIRING</span>
+                                               
+                                            </a>
+                                        </li>
+                                        <li id="nav-menu-item-15471" class="joy menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14833 current_page_item anchor-item active narrow">
+                                            <a href="#story" class=" current smoothScroll mystory" style="line-height: 100px;">
+                                             
+                                                <span>OUR STORY</span>
+                                               
+                                            </a>
+                                        </li>
+                                        <li id="nav-menu-item-15472" class="joy menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14833 current_page_item anchor-item active narrow">
+                                            <a href="#team" class=" current smoothScroll" style="line-height: 100px;">
+                                              
+                                                <span>TEAM</span>
+                                                
+                                            </a>
+                                        </li>
+                                        
+                                        </li>
+                                        <li id="nav-menu-item-15498" class="joy menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14833 current_page_item anchor-item active narrow">
+                                            <a href="#contact" class=" current smoothScroll" style="line-height: 100px;">
+                                                
+                                                <span>CONTACT US</span>
+                                                
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </nav>
+                                
+                            </div>
+							
+                        </div>
+                    </div>
+			</div>
+		</div>
+	</header>
+	
+    <a class="smoothScroll" id="top"></a>
+	<div id="topmost" class="abcd" style="min-height:750px; background:url(img/new.jpg) no-repeat center center fixed; background-size:cover; background-attachment:fixed">
+            
+	  <div align="center" class="guy" style="padding-top:36%; width:80%; left:5%; align:center; top:0%; margin-left:4%; position:absolute">
+            <div id="animated-example" class="animated fadeInDown">
+			<p align="center" style="color:white; font-size:40px; margin-left:3%; font-weight:800; font-family: trebuchet ms; padding-bottom: 2%;
+    line-height: 110%; text-transform:uppercase">Setting New Horizons for a better tomorrow</p>
+	        </div>
+            <div id="animated-example" class="animated fadeInUp" >
+			<p align="center" style="padding-top:0.2%; width:80%; line-height:140%; padding-left:2%; color:white; transition-delay: 5s; font-size:21px; font-weight:600">
+			We are united in driving innovation across multiple spheres by engaging our stakeholders from the very inception of an idea to its end result thus enabling 
+them traverse the journey of our success.   
+            </p>
+			</div>
+         </div>
+		 
+     
+        </div>	
+		
+      </div>
+	  </div>
+	  
+	 </td>
+	 </tr>
+	 
+	 <a id="A_1" class="crunchify-top" href="#top">
+			 <img src="img/top.png" style="height:50px; width:50px">
+			 </a>
+			 
+	 <tr>
+	 <td>
+
+	  <a class="scroll123 smoothScroll mystory" id="story"></a>
+      <section id="second">
+         <div align="center" style="width:100%; padding-top:6%">
+            <div id="object2" style="color: #fff !important ;
+    font-size: 45px !important; opacity:1 !important;
+    line-height: 48px !important;
+    margin-bottom: 10px !important;
+    font-weight: 500 !important;
+    font-family: 'trebuchet ms' !important; ">
+			THE JOURNEY SO FAR
+			<br /><span style="text-transform:lowercase">A DIFFERENT PATH!</span>
+			</div>
+            <div id="object3" class="animated flash" style="padding-bottom:6%;">
+			<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" 
+			style=" margin-top:7%; width:80%; font-size:20px; font-weight:550; line-height:33px;margin-left:2.5%; font-family: 'coming soon', cursive; ">
+
+Blue Rain is in the league of emerging/evolving start-ups whose flagship solution aims to provide a convenient and easy-to-us platform to the sports and fitness eco-system. 
+The path to our success is the journey to explore new frontiers of growth that not only suit the needs of our clients but also develop sustainable and efficient mechanisms to enable a brighter future.
+			
+            
+			</p>
+			</div>
+
+		 </div>
+      </section>
+       
+	   </td>
+	   </tr>
+	   
+	   <tr>
+	   <td>
+	   
+	  <section id="third" >
+         
+         <div id="object1" class="curtain" style="width:100%; margin-top:6%;">
+            <p align="center" style="color: #fff;
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-family: 'trebuchet ms'; font-weight:bold; ">STAY TUNED - STAY FIT</p>
+            <div style=" width:100%">
+               
+               <div align="center" style="width:100%; margin-top:-4%">
+			   <p id="nim" data-center="opacity: 1" align="center" style="color:#4d4d4d; margin-top:12%; width:70%; font-size:21px; line-height:45px">
+			  We are few months away from launching our flagship sports and fitness app: FitKix, an interactive process oriented mobile application, thriving to become industry’s leading online services distribution platform. A smart booking engine for direct bookings via the web, mobile or social network, a single-point of entry into a huge network of fitness avenues and sports.
+
+			   </p>
+			   </div>
+            </div>
+         </div>
+      </section>
+	  
+	  </td>
+	  </tr>
+	  
+	  <tr>
+	  <td>
+	  
+	  <a class="scroll123 smoothScroll" id="team"></a>
+      <section id="fourth" style="">
+         <div align="center" style="padding-top:4%; width:100%; overflow-x:hidden; color:#025757; margin-bottom:1%; font-size:32px"> 
+		 
+		<h1 style="color:cadetblue; font-size:44px; margin-bottom:6%">OUR TEAM</h1>
+	    
+	
+	<div id="contain wrapper211" class="mine" align="center" style="width:100%; overflow-x:hidden; transform: translateX(7%); padding-bottom:2%; color:#025757; font-size:18px">
+
+   <div id="all">
+   <div id="object4">
+<div class="view view-tenth">  
+     <div id="rectangle">
+
+<div align="center" style="padding-top:20%">
+<div id="circle1234" style="background: url(img/himm.jpg) no-repeat">
+</div>
+
+<h3 class="heyy">HIMANSHU KAMAT</h3>
+<p class="again" style="margin-top:-5%">Co-Founder,<br /> Administration, <br />Finance and Business Development</p>
+</div>
+
+
+</div> 
+</div>  
+
+<div class="view view-tenth">  
+     <div id="rectangle">
+
+<div align="center" style="padding-top:20%">
+<div id="circle1234" style="background: url(img/muk.JPG) no-repeat">
+</div>
+
+<h3 class="heyy">MUKUND SAROLKAR</h3>
+<p class="again">Co-founder, <br /> Product Development <br />Technical Head</p>
+</div>
+
+
+</div> 
+</div>
+
+</div>
+
+<div id="object5">
+<div class="view view-tenth">  
+     <div id="rectangle">
+
+<div align="center" style="padding-top:20%">
+<div id="circle1234" style="background: url(img/shan1.png) no-repeat">
+</div>
+
+<h3 class="heyy">SHANNON D'SOUZA</h3>
+<p class="again">Co-founder, <br />Marketing  and Business Development</p>
+</div>
+
+
+</div> 
+</div>
+
+<div class="view view-tenth">  
+     <div id="rectangle">
+
+<div align="center" style="padding-top:20%">
+<div id="circle1234" style="background: url(img/aditi.png) no-repeat">
+</div>
+
+<h3 class="heyy">ADITI KAMAT</h3>
+<p class="again"> Strategist, <br />Business Consultant</p>
+</div>
+
+</div> 
+</div>
+
+</div>
+
+</div>
+  </div>
+  <div class="section123 group group1" style="margin-left:19%; margin-bottom:10%">
+	<div id="object6" class="col123 span_1_of_2" style="">
+	
+	<div align="center" style="">
+<div id="circle2" style="background: url(img/anubha.jpg) no-repeat; float:left">
+</div>
+<div style="float:right; text-align:left; width:70%">
+<h3 class="heyy">ANUBHA JAIN</h3>
+<p class="again" style="font-size:14px; color:#3F4853"><strong>"</strong>Web Developer Intern<strong>"</strong></p>
+</div>
+	
+	</div>
+	</div>
+	
+	<div id="object7" class="col123 span_1_of_2" style="">
+	
+	<div align="center" style="">
+<div id="circle2" style="background: url(img/priya.png) no-repeat; float:left">
+</div>
+<div style="float:right; text-align:left; width:70%">
+<h3 class="heyy">PRIYA DIKEY</h3>
+<p class="again" style="font-size:14px; color:#3F4853 "><strong>"</strong>Content Writer<strong>"</strong></p>
+</div>
+
+	
+	
+	</div>
+</div>
+</div>
+		</div>
+		
+      </section>
+	  
+	   </td>
+	   </tr>
+	   
+	   <tr>
+	   <td>
+	   
+	  <a class="smoothScroll" name="contact"></a>
+     <section id="fifth">
+        
+		<table style="width:100%">
+		<tr>
+		<td>
+		
+         <div id="objectteam" class="text" style="color:white; font-weight:700; font-size:25px; padding-top:8%">CONTACT US</div>
+        
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
+		
+			<div class="wrapper1" style="padding-top:1%; width:100%;height:70%">
+            
+			<div  data-position="left" class="notViewed animBlock floatl" style="width:30%; margin-left:15%; margin-top:5%">
+			<div id="one" style="font-size:18px; color:#c7c7c7; width:100%; margin-top:7%">
+               <span style="font-weight:bold; font-size:38px; color:burlywood; font-family:'coming soon', cursive ">	REACH US </span> 
+			   <p style="width:80%; font-size:28px; float:left; margin-top:10%; line-height:45px; margin-left:8%; color:white">
+                 Your feedback will take us a long way 
+               </p>
+			   
+            </div>
+			</div>
+			
+            <div  data-position="right" class="notViewed animBlock floatr" style="width:50%">
+			<div id="three" style="min-width:300px; width:80%; padding-top:3%; margin-right:22%">
+               <form action="onepage1.html" method="post">
+                  
+				  
+	              <input type="text" name="cd-name" id="INPUT_3" placeholder="NAME" style="height:10px;color:white" />
+                  
+				  <input type="email" name="cd-email" id="INPUT_1" placeholder="EMAIL" style="height:10px;color:white" />
+				  
+	              <textarea name="cd-textarea" id="TEXTAREA_3">
+	              </textarea>
+				  
+           
+                  <div class="button-fill grey" style="min-width:285px; width:81%; margin-right:37%; margin-top:1%">
+                  <div class="button-text">SUBMIT</div>
+                  <div class="button-inside">
+                  <div class="inside-text">SUBMIT</div>
+                  </div>
+                  </div>
+				  
+			   </form>
+            </div>
+            </div>
+         </div>
+		 
+		 </td>
+		 </tr>
+		 </table>
+		 
+      </section>
+	   
+	   </td>
+	   </tr>
+	   
+	   <tr>
+	   <td style="background-color:black">
+	   
+      <section id="sixth">
+       
+	   			<div id="obj" class="section123 group">
+	<div class="col123 span_1_of_4 seeme" style="margin-top:0.2%; height:70px">
+	
+	<table style="margin-top:1%">
+	  <tr>
+	  <td style="border:none !important; "> 
+	  <div class="bottom123 qwerty" align="center" style="padding-top:8%; float:left; font-size:13px; margin-right:4%; display:inline-block; margin-top:-4%">
+	     <a href="privacy.html" class="content123 smoothScroll" style="text-decoration:none">PRIVACY POLICY</a>
+	  </div>
+	  </td>
+	  <td style="border:none !important ;">
+	   <div  class="bottom123 qwerty1"  align="center" style="padding-top:8%; float:left; margin-right:7%; font-size:13px; display:inline-block; margin-top:-4%">
+	     <a href="terms.html" class="content123 smoothScroll" style="text-decoration:none">TERMS OF USE</a>
+	  </div>
+	  </td>
+	  </tr>
+	  </table>
+	  
+	</div>
+	<div class="col123 span_1_of_4 hurray2" style="width:40%; margin-top:2%">
+	
+	 <p style=" width:100%; font-size:16px">&copy; BlueRain Technologies 2015 | Developed by Anubha Jain</p>
+   
+	
+	</div>
+	<div class="col123 span_1_of_4 hurray" style="width:15%; margin-top:2.7%; margin-left:3%">
+	
+	<a href=""><img class="lazyload" style="height:35px; width:35px" src="img/fb.png" /></a>
+	  <a href=""><img style="height:35px; width:35px" src="img/twit.png" /></a>
+	  <a href=""><img style="height:35px; width:35px" src="img/inn.png" /></a>
+	  
+	
+	</div>
+	<div class="col123 span_1_of_4 hurray" style=" width:10%; margin-top:2.8%; margin-left:3%">
+	
+	 <a href=""><img style="height:30px; width:30px" src="img/flag.png" /></a><span style="font-size:15px; margin-top:-8%; margin-left:8%">INDIA</span>
+	 
+	
+	</div>
+</div>
+	  </section>
+	  
+	  </td>
+	  </tr>
+	  </table>
+	  	  
+	   <script>
+	   $(".button-fill").hover(function () {
+    $(this).children(".button-inside").addClass('full');
+}, function() {
+  $(this).children(".button-inside").removeClass('full');
+});
+
+function seemenu(div2, div3)
+	 {
+	  
+			d2=document.getElementById(div2);
+			d3=document.getElementById(div3);
+	        
+            if($(d3).is(':visible'))
+            {
+                  d3.style.display="none";
+                   return;				  
+			}
+			
+            d2.style.display="none";	
+            d3.style.display="block";
+			
+	 }
+	 
+
+	  </script>
+	
+	</div>
+	  
+	  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	  <script>
+	$(window).scroll(function() {
+		$('#object1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+550) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#obj').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+450) {
+				$(this).addClass("pullUp");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#object2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+550) {
+				$(this).addClass("hatch");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#object3').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+550) {
+				$(this).addClass("slideExpandUp");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#object5').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("stretchLeft");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#object4').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#object6').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+650) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+	
+	
+	$(window).scroll(function() {
+		$('#object7').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+650) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#objectteam').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("bigEntrance");
+			}
+		});
+	});
+</script>
+
+</body>
+</html>
